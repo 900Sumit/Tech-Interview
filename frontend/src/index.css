@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+@font-face {
+  font-family: "Californian FB";
+  src: local("Californian FB"), serif;
+}
+
+.font-californian {
+  font-family: "Californian FB", serif;
+}
+
+/* Add cursor pointer to buttons by default - this is coming from tailwind docs */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
